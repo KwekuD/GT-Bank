@@ -1131,6 +1131,7 @@ footer{
   padding: 35px;
   margin: auto;
   overflow-y: hidden;
+  margin-bottom: 35px;
 }
 .AnnounceBanner{
   height: 100%;
@@ -1158,14 +1159,28 @@ footer{
   font-weight: 400;
   color: #696f73;
 }
-.hiddenp, .hiddenMenu{
-  display: none;
-}
+
 
 @media screen and (max-width: 820px){
   .branchBanner h1{
     font-size: 26px;
     padding: 20px 0;
+  }
+  .centerWork{
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+  }
+  .AnnounceBanner{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 280px;
+    width: 100%;
+    background-color: #fff;
+
   }
 }
 .BodiBodimain{
@@ -1388,3 +1403,172 @@ select, .InputContainede:after{
   .bodymap{
     padding: 0;
   }
+}
+/*Styling Media Center*?
+
+.hiddenp, .hiddenMenu{
+  display: none;
+}*/
+.hiddenp{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #424a52;
+}
+.hiddenMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.MenuCards{
+  display: inline-grid;
+  height: 180px;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.15);
+  transition: all .2s ease-in-out;
+  border: 1px solid #e0e1e2;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.MenuCards a{
+position: relative;
+ height: 100%;
+ width: 100%;
+ padding: 20px 15px;
+ box-sizing: border-box;
+ text-decoration: none;
+ color: #dd4f05;
+}
+.coverCards{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.coverCards svg{
+  fill: #dd4f05;
+  height: 63px;
+  width: 63px;
+  padding-bottom: 10px;
+}
+.coverCards p{
+  font-size: 15px;
+  color: #424a52;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.coverCards .fa{
+  display: none;
+  color: #dd4f05;
+}
+.MenuCards:hover{
+  box-shadow: 0 2px 15px hsla(210,3%,88%,.5);
+}
+.MenuCards:hover .coverCards p{
+  color: #dd4f05;
+}
+.buttonpress{
+  background: #f0f1f1;
+  border: 1px solid #e7e8e9;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  right: -25px;
+  top: 60px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.buttonpress a{
+  text-decoration: none;
+  color: #dd4f05;
+  margin: 0;
+}
+.buttonpress .fa{
+  font-size: 35px;
+  margin: 0;
+  color: #dd4f05;
+}
+@media screen and (max-width: 820px){
+  .hiddenMenu{
+    flex-direction: column;
+  }
+  .buttonpress{
+    display: none;
+  }
+  .MenuCards{
+    width: 100%;
+    height: 63px;
+    border: 0;
+    box-shadow: 0;
+  }
+  .MenuCards a{
+    padding: 13px 20px;
+  }
+  .coverCards{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .coverCards svg{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+  .coverCards .fa{
+    display: inline;
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+  }
+  .MenuCards{
+    display: none;
+  }
+  .onllyOne{
+    display: flex;
+  }
+}
+.NewsBody{
+  display: flex;
+  flex-direction: row;
+  padding: 70px 6%;
+}
+.NewsList h6{
+  font-size: 18px;
+  font-weight: 600;
+  color: #424a52;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+.NewArticle p{
+  color: #a2a5a8;
+  font-weight: 600;
+  line-height: 1.5
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .03em;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+.NewArticle a{
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #424a52;
+}
+.NewArticle a:hover{
+  color: #dd4f05;
+}
+.NewArticle{
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+hr.solo{
+  border: 0.65px solid #e0e1e2;
+
+}
