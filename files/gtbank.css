@@ -1536,6 +1536,13 @@ position: relative;
   flex-direction: row;
   padding: 70px 6%;
 }
+.NewsList{
+  flex-basis: 70%;
+  margin-right: 10%;
+}
+.NewsBar{
+  flex-basis: 20%;
+}
 .NewsList h6{
   font-size: 18px;
   font-weight: 600;
@@ -1571,4 +1578,142 @@ position: relative;
 hr.solo{
   border: 0.65px solid #e0e1e2;
 
+}
+.AllMediaBtn{
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background: #dd4f05;
+  color: #fff;
+  box-shadow: 3px 3px 6px 0 rgba(0,0,0,.3);
+  margin-top: 35px;
+}
+.AllMediaBtn .fa{
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.AllMediaBtn a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+
+}
+.AllMediaBtn:hover .fa{
+  padding-left: 10px;
+}
+.MediaSearch{
+  width: 230px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.MediaSearch input[type="search"]{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  background: #fafbfb;
+  padding: 10px;
+
+}
+.searchBTn{
+  position: absolute;
+  right: 10px;
+  height: 100%;
+  z-index: 1;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: #fafbfb;
+  font-size: 20px;;
+  color: #424a52;
+  border-bottom: 1px solid #ced4da;
+  font-weight: lighter;
+}
+.MediCategories{
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+.MediCategories h5{
+  color: #424a52;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 24px;
+  display: block;
+}
+.MediCategories ul{
+  list-style-type: none;
+}
+.MediCategories ul li a{
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 14px;
+  color: #696f73;
+  fill: #696f73;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+}
+.MediCategories ul li a .fa{
+  margin-right: 8px;
+}
+.MediCategories ul li a:hover{
+  color: #dd4f05;
+}
+.MediCategories2{
+  padding-left: 16px;
+  margin-top: 24px;
+}
+.MediCategories2 h5{
+  color: #424a52;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 24px;
+  display: block;
+}
+.MediCategories2 a{
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 14px;
+  color: #696f73;
+  fill: #696f73;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+}
+.MediCategories2 a .fa{
+  margin-right: 8px;
+}
+.MediCategories2 a:hover{
+  color: #dd4f05;
+}
+a[href^=tel]{
+  font-weight: 600;
+  font-size: 16px;
+  color: #dd4f05;
+}
+.MediCategories2 p{
+  font-size: 14px;
+  margin-top: 16px;
+  color: #696f73;
+}
+@media screen and (max-width: 820px){
+
+  .NewsList{
+    width: 100%;
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+  .NewsBar{
+    display: none;
+  }
 }
