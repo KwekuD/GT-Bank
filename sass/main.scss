@@ -1,0 +1,20 @@
+//custom variables
+
+//import functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$gtcolors-theme-colors: (
+    "Gtorange" : #dd4f05,
+    "Gthover": #ce4a05,
+    "Gtgrey": #424a52,
+    "Gtmessage": #696f73,
+    "Gtbg": rgba(255, 229, 214, 0.589), 
+    "Gtlight": #ffffffe0,
+    "Gtsec": #ab3d04
+);
+
+$theme-colors: map-merge($gtcolors-theme-colors, $theme-colors);
+
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
